@@ -1,0 +1,28 @@
+@startuml
+
+abstract class Operation {
+    + int compute(int a, int b)
+}
+
+class AddOperation {
+    + int compute(int a, int b)
+}
+
+class SubOperation {
+    + int compute(int a, int b)
+}
+
+class MulOperation {
+    + int compute(int a, int b)
+}
+
+class DivOperation {
+    + int compute(int a, int b)
+}
+
+Operation <|-- AddOperation
+Operation <|-- SubOperation
+Operation <|-- MulOperation
+Operation <|-- DivOperation
+
+@enduml
